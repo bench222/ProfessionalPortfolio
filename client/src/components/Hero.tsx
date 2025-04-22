@@ -41,19 +41,19 @@ export default function Hero() {
               className="text-5xl md:text-6xl font-poppins font-bold text-primary mb-4"
               variants={itemVariants}
             >
-              John Doe
+              Benjamin Fajardo
             </motion.h1>
             <motion.h2 
               className="text-2xl md:text-3xl font-poppins font-medium text-primary/70 mb-6"
               variants={itemVariants}
             >
-              Full Stack Developer
+              Graphic Designer / Web Developer
             </motion.h2>
             <motion.p 
               className="font-inter text-lg text-primary/80 mb-8 max-w-lg"
               variants={itemVariants}
             >
-              Passionate about creating elegant, efficient solutions that solve real-world problems. Specialized in modern web technologies and user-centered design.
+              Experienced multimedia specialist with expertise in WordPress, UI/UX design, and graphic design. Creating visually appealing, user-friendly websites and engaging multimedia content.
             </motion.p>
             <motion.div 
               className="flex flex-wrap gap-4"
@@ -88,7 +88,7 @@ export default function Hero() {
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
               <img 
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                alt="Professional portrait of John Doe" 
+                alt="Professional portrait of Benjamin Fajardo" 
                 className="w-full h-full object-cover"
               />
             </div>

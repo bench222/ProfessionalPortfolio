@@ -2,10 +2,10 @@ import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 const stats = [
-  { value: "5+", label: "Years Experience" },
-  { value: "50+", label: "Projects Completed" },
-  { value: "15+", label: "Satisfied Clients" },
-  { value: "10+", label: "Open Source Contributions" },
+  { value: "10+", label: "Years Experience" },
+  { value: "100+", label: "Projects Completed" },
+  { value: "30+", label: "Satisfied Clients" },
+  { value: "15+", label: "Tools Mastered" },
 ];
 
 export default function About() {
@@ -71,13 +71,13 @@ export default function About() {
             variants={itemVariants}
           >
             <p className="font-inter text-lg text-primary/80 mb-6">
-              I'm a Full Stack Developer with over 5 years of experience building web applications and digital experiences that are both beautiful and functional. My journey in development began when I built my first website at 15, and I've been hooked ever since.
+              I'm an experienced Graphic Designer, Web Developer, and Multimedia Specialist with expertise in WordPress, Elementor, Avada, and Divi. My journey in design and development began with my BS in Computer Science from New Era University (2008-2012).
             </p>
             <p className="font-inter text-lg text-primary/80 mb-6">
-              Prior to my current role at TechSolutions Inc, I worked with various startups to help them establish their digital presence. I hold a Bachelor's degree in Computer Science from University of Technology and continue to expand my skills through ongoing learning.
+              My background in UI design, graphic design, and video editing has enabled me to create visually appealing, user-friendly websites and engaging multimedia content. I'm proficient in tools like Adobe Premiere Pro, After Effects, and Final Cut Pro for video editing and motion graphics.
             </p>
             <p className="font-inter text-lg text-primary/80">
-              When I'm not coding, you can find me hiking mountain trails, experimenting with new recipes, or contributing to open-source projects that make a difference.
+              I'm dedicated to delivering projects on time and within budget, and I'm always looking for ways to improve my skills and stay up-to-date with the latest trends in web development, design, and multimedia.
             </p>
           </motion.div>
 

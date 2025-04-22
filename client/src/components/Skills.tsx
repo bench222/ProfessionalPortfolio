@@ -3,32 +3,32 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { Code, Server, Wrench } from "lucide-react";
 
 const skillsData = {
-  frontend: [
+  design: [
+    "Adobe Creative Suite",
+    "FIGMA",
+    "UI/UX Design",
+    "Graphic Design",
+    "Motion Graphics",
+    "Cinema 4D",
+    "Blender",
+  ],
+  development: [
+    "WordPress",
+    "Elementor",
+    "Avada",
+    "Divi",
     "HTML/CSS",
     "JavaScript",
-    "React",
-    "Vue.js",
-    "Tailwind CSS",
-    "SASS",
-    "TypeScript",
+    "PHP",
   ],
-  backend: [
-    "Node.js",
-    "Express",
-    "Python",
-    "Django",
-    "MongoDB",
-    "PostgreSQL",
-    "Firebase",
-  ],
-  tools: [
-    "Git",
-    "Docker",
-    "CI/CD",
-    "Jest",
-    "Figma",
-    "AWS",
-    "Vercel",
+  multimedia: [
+    "Adobe Premiere Pro",
+    "Final Cut Pro",
+    "After Effects",
+    "Cap Cut",
+    "E-commerce Management",
+    "Shopify",
+    "WooCommerce",
   ],
 };
 
@@ -96,7 +96,7 @@ export default function Skills() {
           animate={mainControls}
           variants={containerVariants}
         >
-          {/* Frontend Skills */}
+          {/* Design Skills */}
           <motion.div 
             className="p-8 bg-white rounded-xl shadow-lg"
             variants={itemVariants}
@@ -106,11 +106,11 @@ export default function Skills() {
             <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
               <Code className="text-secondary text-2xl" />
             </div>
-            <h3 className="text-2xl font-poppins font-semibold mb-4">Frontend</h3>
+            <h3 className="text-2xl font-poppins font-semibold mb-4">Design</h3>
             <div className="flex flex-wrap gap-2">
-              {skillsData.frontend.map((skill, index) => (
+              {skillsData.design.map((skill, idx) => (
                 <motion.span 
-                  key={index}
+                  key={idx}
                   className="skill-tag bg-gray-100 text-primary px-3 py-1 rounded-full text-sm"
                   whileHover={{ y: -2 }}
                   transition={{ duration: 0.3 }}
@@ -121,7 +121,7 @@ export default function Skills() {
             </div>
           </motion.div>
           
-          {/* Backend Skills */}
+          {/* Development Skills */}
           <motion.div 
             className="p-8 bg-white rounded-xl shadow-lg"
             variants={itemVariants}
@@ -131,11 +131,11 @@ export default function Skills() {
             <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
               <Server className="text-accent text-2xl" />
             </div>
-            <h3 className="text-2xl font-poppins font-semibold mb-4">Backend</h3>
+            <h3 className="text-2xl font-poppins font-semibold mb-4">Development</h3>
             <div className="flex flex-wrap gap-2">
-              {skillsData.backend.map((skill, index) => (
+              {skillsData.development.map((skill, idx) => (
                 <motion.span 
-                  key={index}
+                  key={idx}
                   className="skill-tag bg-gray-100 text-primary px-3 py-1 rounded-full text-sm"
                   whileHover={{ y: -2 }}
                   transition={{ duration: 0.3 }}
@@ -146,7 +146,7 @@ export default function Skills() {
             </div>
           </motion.div>
           
-          {/* Other Skills */}
+          {/* Multimedia Skills */}
           <motion.div 
             className="p-8 bg-white rounded-xl shadow-lg"
             variants={itemVariants}
@@ -156,11 +156,11 @@ export default function Skills() {
             <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
               <Wrench className="text-purple-500 text-2xl" />
             </div>
-            <h3 className="text-2xl font-poppins font-semibold mb-4">Tools & Others</h3>
+            <h3 className="text-2xl font-poppins font-semibold mb-4">Multimedia</h3>
             <div className="flex flex-wrap gap-2">
-              {skillsData.tools.map((skill, index) => (
+              {skillsData.multimedia.map((skill, idx) => (
                 <motion.span 
-                  key={index}
+                  key={idx}
                   className="skill-tag bg-gray-100 text-primary px-3 py-1 rounded-full text-sm"
                   whileHover={{ y: -2 }}
                   transition={{ duration: 0.3 }}
