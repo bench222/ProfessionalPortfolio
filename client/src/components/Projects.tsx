@@ -4,28 +4,36 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "A full-featured online store with payment processing, inventory management, and customer accounts.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    technologies: ["React", "Node.js", "MongoDB"],
-    liveLink: "https://example.com",
-    codeLink: "https://github.com/example/project"
+    title: "Multimedia Specialist",
+    description: "Produced multimedia presentations, photography, and managed the photo studio at Onmedia Creative Solutions Inc.",
+    image: "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    technologies: ["Photography", "Image Retouching", "Multimedia Production"],
+    period: "2012-2018",
+    company: "Onmedia Creative Solutions Inc."
   },
   {
-    title: "Task Management App",
-    description: "A collaboration tool that helps teams organize tasks, track progress, and meet deadlines.",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    technologies: ["Vue.js", "Express", "PostgreSQL"],
-    liveLink: "https://example.com",
-    codeLink: "https://github.com/example/project"
+    title: "UI/UX Designer",
+    description: "Created and designed a wide variety of visual materials, maintained trend reviews, and assisted in marketing campaigns at Keywest Technology.",
+    image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    technologies: ["UI/UX Design", "Marketing Campaigns", "PowerPoint", "Print Production"],
+    period: "2018-2022",
+    company: "Keywest Technology"
   },
   {
-    title: "Health Tracking Dashboard",
-    description: "A data visualization platform that helps users monitor their health metrics and activities.",
-    image: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    technologies: ["React", "D3.js", "Firebase"],
-    liveLink: "https://example.com",
-    codeLink: "https://github.com/example/project"
+    title: "Graphic Designer",
+    description: "Created and managed social media content for advertising campaigns at Atomic DC Advertising Agency.",
+    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    technologies: ["Graphic Design", "Social Media", "Content Creation"],
+    period: "Feb 2022-Sept 2022",
+    company: "Atomic DC Advertising Agency"
+  },
+  {
+    title: "Graphic Designer",
+    description: "Produced video and graphics for social media content and managed social media accounts at ClearKen.",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    technologies: ["Video Production", "Graphics", "Social Media Management"],
+    period: "2023",
+    company: "ClearKen"
   }
 ];
 
@@ -73,7 +81,7 @@ export default function Projects() {
             className="text-4xl font-poppins font-bold text-primary mb-3"
             variants={itemVariants}
           >
-            Featured Projects
+            Work Experience
           </motion.h2>
           <motion.div 
             className="w-24 h-1 bg-secondary mx-auto mb-6"
@@ -83,7 +91,7 @@ export default function Projects() {
             className="font-inter text-lg text-primary/70 max-w-2xl mx-auto"
             variants={itemVariants}
           >
-            A selection of my recent work, demonstrating my technical abilities and creative problem-solving.
+            My professional journey in design, development, and multimedia across various companies and industries.
           </motion.p>
         </motion.div>
         
@@ -124,25 +132,13 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="flex justify-between">
-                  <a 
-                    href={project.liveLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-secondary font-medium text-sm flex items-center"
-                  >
-                    <span>Live Demo</span>
-                    <ExternalLink className="ml-1 h-4 w-4" />
-                  </a>
-                  <a 
-                    href={project.codeLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary/70 font-medium text-sm flex items-center"
-                  >
-                    <span>Source Code</span>
-                    <Github className="ml-1 h-4 w-4" />
-                  </a>
+                <div className="flex justify-between items-center mt-2">
+                  <div className="text-secondary font-medium text-sm">
+                    <span className="font-bold">{project.company}</span>
+                  </div>
+                  <div className="text-primary/70 font-medium text-sm bg-gray-100 px-2 py-1 rounded">
+                    <span>{project.period}</span>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -154,10 +150,14 @@ export default function Projects() {
           variants={itemVariants}
         >
           <a 
-            href="#" 
+            href="#contact" 
             className="inline-flex items-center text-secondary hover:text-secondary/80 font-poppins font-medium transition duration-300"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
-            View All Projects
+            Contact Me For More Details
             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>

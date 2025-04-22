@@ -120,8 +120,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-primary/60 mb-1">Email</p>
-                    <a href="mailto:contact@johndoe.com" className="text-primary hover:text-secondary transition duration-300">
-                      contact@johndoe.com
+                    <a href="mailto:benjamin.fajardo24@gmail.com" className="text-primary hover:text-secondary transition duration-300">
+                      benjamin.fajardo24@gmail.com
                     </a>
                   </div>
                 </div>
@@ -132,8 +132,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-primary/60 mb-1">Phone</p>
-                    <a href="tel:+11234567890" className="text-primary hover:text-secondary transition duration-300">
-                      +1 (123) 456-7890
+                    <a href="tel:+639760670034" className="text-primary hover:text-secondary transition duration-300">
+                      +63 976 067 0034
                     </a>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-primary/60 mb-1">Location</p>
-                    <p className="text-primary">San Francisco, CA</p>
+                    <p className="text-primary">Philippines</p>
                   </div>
                 </div>
               </div>
