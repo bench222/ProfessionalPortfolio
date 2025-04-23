@@ -47,7 +47,7 @@ export default function Hero() {
               className="text-2xl md:text-3xl font-poppins font-medium text-primary/70 mb-6"
               variants={itemVariants}
             >
-              Graphic Designer / Web Developer
+              Multimedia Specialist
             </motion.h2>
             <motion.p 
               className="font-inter text-lg text-primary/80 mb-8 max-w-lg"

@@ -21,6 +21,32 @@ export async function registerRoutes(app: Express): Promise<Server> {
     });
   });
 
+  // CMS endpoints
+  app.post('/api/cms/create', (req, res) => {
+    const { title, content } = req.body;
+    if (!title || !content) {
+      return res.status(400).json({ message: 'Title and content are required' });
+    }
+    // Logic to create content in the database
+    return res.status(201).json({ message: 'Content created successfully' });
+  });
+  
+  app.put('/api/cms/update/:id', (req, res) => {
+    const { id } = req.params;
+    const { title, content } = req.body;
+    if (!title || !content) {
+      return res.status(400).json({ message: 'Title and content are required' });
+    }
+    // Logic to update content in the database
+    return res.status(200).json({ message: 'Content updated successfully' });
+  });
+  
+  app.delete('/api/cms/delete/:id', (req, res) => {
+    const { id } = req.params;
+    // Logic to delete content from the database
+    return res.status(200).json({ message: 'Content deleted successfully' });
+  });
+
   const httpServer = createServer(app);
 
   return httpServer;

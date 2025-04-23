@@ -153,7 +153,7 @@ export default function Contact() {
                 <p className="text-primary/70 mb-4">Connect with me on social media:</p>
                 <div className="flex gap-4">
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://www.linkedin.com/in/benjamin-fajardo-4165bb187/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full bg-gray-100 hover:bg-secondary text-primary hover:text-white flex items-center justify-center transition duration-300"
