@@ -47,13 +47,13 @@ export default function Hero() {
               className="text-2xl md:text-3xl font-poppins font-medium text-primary/70 mb-6"
               variants={itemVariants}
             >
-              Multimedia Specialist
+              Digital Designer
             </motion.h2>
             <motion.p 
               className="font-inter text-lg text-primary/80 mb-8 max-w-lg"
               variants={itemVariants}
             >
-              Experienced multimedia specialist with expertise in WordPress, UI/UX design, and graphic design. Creating visually appealing, user-friendly websites and engaging multimedia content.
+              I design digital experiences that look great and work smoothly—from custom WordPress sites to user-friendly interfaces and eye-catching graphics & multimedia content. My superpower? Turning ideas into functional, visually appealing designs that people actually enjoy using.
             </motion.p>
             <motion.div 
               className="flex flex-wrap gap-4"
@@ -87,7 +87,7 @@ export default function Hero() {
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                src="https://media.licdn.com/dms/image/v2/C5103AQHA28XWHc8kKQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1582735146977?e=1750896000&v=beta&t=SogMoVsZ1tyda847YiDANfo3OUZIdRXEP1suzqA0zkE" 
                 alt="Professional portrait of Benjamin Fajardo" 
                 className="w-full h-full object-cover"
               />

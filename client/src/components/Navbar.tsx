@@ -7,6 +7,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 const navLinks = [
   { name: "About", href: "#about" },
+  { name: "Portfolio", href: "#portfolio" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
